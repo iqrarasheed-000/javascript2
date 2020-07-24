@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="style.css" type="text/css" rel= "stylesheet" />
+    </head>
+    <body>
+        Input Year: <input type="text" id = "year"/> 
+        <input type="button" id="button" onClick="isLeapYear()" value="Check Leap Year"> 
+        <p id="check"></p> 
+<!--Q1 EVENTS-->   
+
+<a href = "#" onclick="popUp()">Click me for Alert Popup</a>
+
+<!--Q2 EVENTS-->
+
+<img width="200" src="mob1.jpg" alt="" onclick="message()">
+<img width="200" src ="mob2.jpg" alt=""onclick="message()">
+<img width="200" src ="mob3.jpg" alt=""onclick="message()">
+<img width="200" src = "mob4.jpg" alt=""onclick="message()">
+
+<!--Q3 EVENTS-->
+
+<table id="deleteBtn">
+    <tr>
+    <th>Index</th>
+    <th>Name</th>
+    <th>Class</th>
+    </tr>
+    <tr>
+    <td>0</td>
+    <td>Ahmer</td>
+    <td>10</td>
+    <td><button onclick="delRow(this)">Delete</button></td>
+   </tr>
+   <tr>
+    <td>1</td>
+    <td>Haris</td>
+    <td>8</td>
+    <td><button onclick="delRow(this)">Delete</button></td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Razia</td>
+    <td>2</td>
+    <td><button onclick="delRow(this)">Delete</button></td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>Shayan</td>
+    <td>6</td>
+    <td><button onclick="delRow(this)">Delete</button></td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>Marium</td>
+    <td>7</td>
+    <td><button onclick="delRow(this)">Delete</button></td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>Sawera</td>
+    <td>7</td>
+    <td><button onclick="delRow(this)">Delete</button></td>
+</tr>
+<tr>
+    <td>6</td>
+    <td>Nayab</td>
+    <td>4</td>
+    <td><button onclick="delRow(this)">Delete</button></td>
+</tr>
+<tr>
+    <td>7</td>
+    <td>Qaiser</td>
+    <td>8</td>
+    <td><button onclick="delRow(this)">Delete</button></td>
+</tr>
+<tr>
+    <td>8</td>
+    <td>Faiza</td>
+    <td>1</td>
+    <td><button onclick="delRow(this)">Delete</button></td>
+</tr>
+<tr>
+    <td>9</td>
+    <td>Tahira</td>
+    <td>10</td>
+    <td><button onclick="delRow(this)">Delete</button></td>
+</tr>
+</table>
+
+<!--Q4 EVENTS-->
+
+<img onmouseover="mouseOver(this)" onmouseout="mouseOut(this)" width ="300" src="flower1.jpg" rel="">
+
+<!--Q5 EVENTS-->
+
+<!--Q1 EVENTS(FORM)-->
+
+<div>
+    <h1>Javascript Counter</h1>
+<button class="btn" id="increase" onclick="increase()">Increase</button>
+<button class="btn" id="decrease"onclick="decrease()">Decrease</button>
+</div>
+    <h1>Signup Form</h1>
+    <button class = "hello" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+    
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+          <div class="clearfix">
+            <button class="hello" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button class="hello" type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!--Q2 EVENTS(FORM)-->
+
+    <h1>READ MORE</h1>
+    <h2 id ="para">Because flowers bloom at varying times of the year, and some plants are annual, dying each winter,<a href="javascript:void(0)" onclick="readMore()">Read More</a></h2>
+
+    <!--Q3 EVENTS(FORM)-->
+
+
+    <!-- CHAPTER "DOM" -->
+
+    <div>
+         <h1> DOM </h1>
+         <div id=”form-content” class=”content”> 
+             <label for=”first-name”>First Name</label>
+              <input type=”text” id=”first-name” />
+              <label for=”last-name”>Last Name</label>
+               <input type=”text” id=”last-name” />
+               <label for=”email”>Email</label>
+               <input type=”text” id=”email” />
+            </div> 
+               <div id=”main-content” class=”content”> 
+                   <p id="first-name" class=”render”> First Name : Alex</p> 
+                   <p id ="last-name"class=”render” id="lastName">Last Name: Bank</p>
+                   <p id ="email" class=”render”> Email : alexbank@example.com</p>
+                   <p class=”render”> Country : Pakistan </p>
+                   <p class=”render”> contact : +92 300 1234567</p> 
+                </div>
+             </div> 
+             
+     <!--CHAPTER # EVENTS(MODAL)--> 
+     <div>
+         <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal"class="img"src="mob1.jpg" alt="">
+         <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" class="img" src="mob2.jpg" alt="">
+         <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" class="img" src="mob3.jpg" alt="">
+         <img onclick="showImage(this)" data-toggle="modal" data-target="#exampleModal" class="img" src="mob4.jpg" alt="">
+     </div> 
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">MODAL IMAGES</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img class="bigImage" src = "" alt ="" id = "modalImage">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+       
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="app.js"></script>
+</body>
+</html>
